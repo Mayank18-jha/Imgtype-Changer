@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌌 Animated Background */
+.animated-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #6a00ff, #000000, #1e1e2f, #4b0082);
+    background-size: 400% 400%;
+    animation: gradientBG 7s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🔝 Header */
+header {
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+/* 💎 Glass Card */
+.container {
+    width: 380px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+/* 📁 Upload Box */
+.upload-box {
+    display: block;
+    border: 2px dashed #9f7aea;
+    padding: 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    background: rgba(159, 122, 234, 0.15);
+}
+
+/* 🔽 Select */
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background: #1e1e2f;
+    color: #fff;
+    outline: none;
+}
+
+/* 🚀 Button */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #9f7aea, #6a00ff);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #9f7aea;
+}
+
+/* 🔻 Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.85rem;
+}
