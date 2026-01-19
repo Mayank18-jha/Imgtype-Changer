@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Universal Image Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+<!-- 🌌 Animated Background -->
+<div class="animated-bg"></div>
+
+<!-- 🔝 Header -->
+<header>
+    <h1>ImgType Changer</h1>
+    <p>Convert Any Image to Any Format Instantly</p>
+</header>
+
+<!-- 💎 Main Card -->
+<div class="container">
+    <h2>Universal Image Converter</h2>
+
+    <form action="/convert" method="POST" enctype="multipart/form-data">
+
+
+
+        <label class="upload-box">
+            <input type="file" name="image" hidden required>
+            <span>📁 Click to Upload Image</span>
+        </label>
+
+        <select name="format" required>
+            <option disabled selected>Convert To</option>
+            <option value="jpeg">JPEG</option>
+            <option value="png">PNG</option>
+            <option value="webp">WEBP</option>
+            <option value="tiff">TIFF</option>
+            <option value="bmp">BMP</option>
+        </select>
+
+        <button type="submit">🚀 Convert Image</button>
+    </form>
+</div>
+
+<!-- 🔻 Footer -->
+<footer>
+    <p>© 2026 ImgType Changer | Built with ❤️</p>
+</footer>
+
+</body>
+</html>
